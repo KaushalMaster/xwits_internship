@@ -5,6 +5,7 @@ import Card from "../../UI/Card/Card";
 
 const ExpenseItem = (props) => {
   const [title, setTitle] = useState(props.title);
+  console.log("cmp called again");
 
   const clickHandler = () => {
     setTitle("Updated!");

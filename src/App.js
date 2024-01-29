@@ -2,6 +2,7 @@
 import CompA from "./components/CompA";
 import ExpenseItem from "./components/Expensess/ExpenseItem/ExpenseItem";
 import Expenses from "./components/Expensess/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 function App() {
   const expenses = [
@@ -32,8 +33,8 @@ function App() {
   ];
   return (
     <div className="App">
-      <h1>Lets Start</h1>
-      {/* <CompA value={name} /> */}
+      
+      <NewExpense />
       <Expenses items={expenses} />
     </div>
   );
