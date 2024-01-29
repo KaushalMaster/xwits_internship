@@ -13,25 +13,35 @@ const ExpenseForm = () => {
   });
 
   const titleChangeHandler = (event) => {
-    setUserInput({
-      ...userInput,
-      title: event.target.value,
+    // setUserInput({
+    //   ...userInput,
+    //   title: event.target.value,
+    // });
+    // console.log(userInput["title"]);
+    setUserInput((prevState) => {
+      return {
+        ...prevState,
+        title: event.target.value,
+      };
     });
-    console.log(userInput["title"]);
   };
 
   const amountChangeHandler = (event) => {
-    setUserInput({
-      ...userInput,
-      amount: event.target.value,
+    setUserInput((prevState) => {
+      return {
+        ...prevState,
+        amount: event.target.value,
+      };
     });
     console.log(userInput["amount"]);
   };
 
   const dateChangeHandler = (event) => {
-    setUserInput({
-      ...userInput,
-      date: event.target.value,
+    setUserInput((prevState) => {
+      return {
+        ...userInput,
+        date: event.target.value,
+      };
     });
     console.log(userInput["date"]);
   };
@@ -55,7 +65,12 @@ const ExpenseForm = () => {
           </div>
           <div className="new-expense__control">
             <label>Date</label>
-            <input type="date" min="2019-01-01" max="2022-12-31" />
+            <input
+              type="date"
+              onChange={dateChangeHandler}
+              min="2019-01-01"
+              max="2022-12-31"
+            />
           </div>
         </div>
         <div className="new-expense__actions">
