@@ -2,10 +2,18 @@ import React from "react";
 import "./NewExpense.css";
 import ExpenseForm from "./ExpenseForm";
 
-const NewExpense = () => {
+const NewExpense = (props) => {
+  const dataFromExpenseFormHandler = (expenseData) => {
+    const data = {
+      ...expenseData,
+      id: Math.random().toString(),
+    };
+    //   console.log("call from child expenseform in expense component");
+    props.expense();
+  };
   return (
     <div className="new-expense">
-      <ExpenseForm />
+      <ExpenseForm onDataFromExpenseForm={dataFromExpenseFormHandler} />
     </div>
   );
 };

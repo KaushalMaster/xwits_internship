@@ -31,10 +31,19 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
+
+  const expenseHandler = (expenseData) => {
+    const data = {
+      ...expenseData,
+      id: Math.random().toString(),
+    };
+    console.log(
+      "Data from newexpense is now accessed in parent App.js component"
+    );
+  };
   return (
     <div className="App">
-      
-      <NewExpense />
+      <NewExpense expense={expenseHandler} />
       <Expenses items={expenses} />
     </div>
   );
