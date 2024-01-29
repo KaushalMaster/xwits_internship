@@ -9,7 +9,7 @@ const NewExpense = (props) => {
       id: Math.random().toString(),
     };
     //   console.log("call from child expenseform in expense component");
-    props.expense();
+    props.expense(data);
   };
   return (
     <div className="new-expense">

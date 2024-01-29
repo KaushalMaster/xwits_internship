@@ -33,6 +33,7 @@ function App() {
   ];
 
   const expenseHandler = (expenseData) => {
+    console.log(expenseData);
     const data = {
       ...expenseData,
       id: Math.random().toString(),
@@ -40,6 +41,7 @@ function App() {
     console.log(
       "Data from newexpense is now accessed in parent App.js component"
     );
+    console.log(data);
   };
   return (
     <div className="App">

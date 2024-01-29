@@ -49,11 +49,11 @@ const ExpenseForm = (props) => {
       amount: amount,
       date: new Date(date),
     };
-    props.onDataFromExpenseForm();
+    props.onDataFromExpenseForm(expenseData);
     setTitle("");
     setAmount("");
     setDate("");
-    console.log(expenseData);
+    // console.log(expenseData);
   };
 
   return (
