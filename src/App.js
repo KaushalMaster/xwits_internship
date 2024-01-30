@@ -4,6 +4,8 @@ import CompA from "./components/CompA";
 import ExpenseItem from "./components/Expensess/ExpenseItem/ExpenseItem";
 import Expenses from "./components/Expensess/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
+import Onboarding from "./components/OnBoardingPage/Onboarding";
+import SignIn from "./components/SignIn/SignIn";
 
 const DUMMY_EXPENSES = [
   {
@@ -48,8 +50,10 @@ function App() {
   };
   return (
     <div className="App">
-      <NewExpense expense={addExpenseHandler} />
-      <Expenses items={expenses} />
+      <SignIn />
+      {/* <Onboarding /> */}
+      {/* <NewExpense expense={addExpenseHandler} />
+      <Expenses items={expenses} /> */}
     </div>
   );
 }
