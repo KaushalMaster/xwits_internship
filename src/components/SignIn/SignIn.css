@@ -1,0 +1,51 @@
+.signIn__form form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 40px 40%;
+  place-items: center;
+}
+
+.signIn__form form > div > input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.btn {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #f0c14b;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddb347;
+}
+
+.signIn__form form > a {
+  margin: 10px 0;
+  text-decoration: none;
+  color: #000;
+}
+
+.signIn__form form > a:hover {
+  text-decoration: underline;
+}
+
+.signIn__form form > p {
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
