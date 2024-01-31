@@ -50,10 +50,10 @@ function App() {
   };
   return (
     <div className="App">
-      <SignIn />
+      {/* <SignIn /> */}
       {/* <Onboarding /> */}
-      {/* <NewExpense expense={addExpenseHandler} />
-      <Expenses items={expenses} /> */}
+      <NewExpense expense={addExpenseHandler} />
+      <Expenses items={expenses} />
     </div>
   );
 }
