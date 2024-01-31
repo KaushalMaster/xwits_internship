@@ -3,6 +3,8 @@ import ExpenseItem from "../ExpenseItem/ExpenseItem";
 import "./Expenses.css";
 import Card from "../../UI/Card/Card";
 import ExpensesFilter from "../ExpensesFilter/ExpensesFilter";
+import ExpensesList from "../../ExpensesList/ExpensesList";
+import ExpensesChart from "../ExpensesChart/ExpensesChart";
 
 const Expenses = (props) => {
   const [filteredYear, setFilteredYear] = useState("2020");
@@ -15,31 +17,18 @@ const Expenses = (props) => {
     return expense.date.getFullYear().toString() === filteredYear;
   });
 
-  let expensesContent = <p className="error_msg">No Expenses Found!</p>;
-
-  if (filteredExpenses.length > 0) {
-    expensesContent = filteredExpenses.map((expense) => {
-      return (
-        <ExpenseItem
-          key={expense.id}
-          title={expense.title}
-          amount={expense.amount}
-          date={expense.date}
-        />
-      );
-    });
-  }
-
   return (
     <Card className="expenses">
       <ExpensesFilter
         selected={filteredYear}
         onChangeFilter={filterChangeHandler}
       />
+      {/* Rendering Chart based on Filtered Values*/}
+      <ExpensesChart expenses={filteredExpenses} />
 
       {/* Rendering Filter items based on condition */}
 
-      {expensesContent}
+      <ExpensesList items={filteredExpenses} />
       {/* <ExpenseItem
         title={props.items[0].title}
         amount={props.items[0].amount}
