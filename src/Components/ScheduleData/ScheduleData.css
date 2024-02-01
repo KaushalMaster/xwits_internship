@@ -1,0 +1,15 @@
+.card__container{
+    background-color: black;
+    color: bisque;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0px 20%;
+    cursor: pointer;
+}
+
+.card__container > div{
+    width: 20%;
+    text-align: center;
+}
