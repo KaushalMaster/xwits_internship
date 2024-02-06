@@ -1,0 +1,13 @@
+.form__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#date, #time, #duration, #location, #description{
+    width: 10%;
+    margin-bottom: 1rem;
+    padding: 10px;
+}

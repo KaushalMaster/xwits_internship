@@ -1,0 +1,32 @@
+export default [
+  {
+    id: 1,
+    title: "Meeting with John",
+    description: "Discuss project progress",
+    location: "Conference room 2",
+    startTime: new Date(2023, 2, 14, 9, 0, 0),
+    endTime: new Date(2023, 2, 14, 10, 0, 0),
+    ownerId: 1,
+    color: "#f8a398",
+  },
+  {
+    id: 2,
+    title: "Team lunch",
+    description: "Celebrate team success",
+    location: "Local pizzeria",
+    startTime: new Date(2023, 2, 14, 12, 0, 0),
+    endTime: new Date(2023, 2, 14, 14, 0, 0),
+    ownerId: 2,
+    color: "#56ca85",
+  },
+  {
+    id: 3,
+    title: "Code review",
+    description: "Review pull request #123",
+    location: "Online",
+    startTime: new Date(2023, 2, 15, 14, 0, 0),
+    endTime: new Date(2023, 2, 15, 15, 0, 0),
+    ownerId: 3,
+    color: "#7499e1",
+  },
+];
