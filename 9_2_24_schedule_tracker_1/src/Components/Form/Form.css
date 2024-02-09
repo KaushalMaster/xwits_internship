@@ -1,0 +1,104 @@
+.form__container > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 0px 40%;
+}
+
+.form__container > form > input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.form__container > form > .description {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.form__container > form > .submit__btn {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form__container > form > h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.form__container > form > .submit__btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.form__container > form > h2 > div > input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.filter__schedules {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 4% 20%;
+}
+
+.filter__schedules > button {
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+
+.filter__schedules > button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.schedules__card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.schedules__card > div {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.input__field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+
+.submit__btn {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+}
